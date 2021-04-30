@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".editaccident">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unfall bearbeiten"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldDateEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Datum"
+                    android:inputType="date" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldUhrzeitEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Uhrzeit"
+                    android:inputType="time" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldStrasseEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Straße"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="true" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldHausnrEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Hausnummer"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldPlzEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Postleitzahl"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldOrtEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ort"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="true" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxVerlezteEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Verletzte" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxAndereSachschädenEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Andere Sachschäden" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zeugen"
+                android:textAlignment="center" />
+
+            <ListView
+                android:id="@+id/lstViewWitnessEditAccident"
+                android:layout_width="match_parent"
+                android:layout_height="138dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button2Edit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_circle"
+                    android:onClick="editAccidentOnClick"
+                    android:text="Ok"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

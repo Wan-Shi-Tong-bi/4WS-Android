@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@drawable/pic" />
+
+    <ListView
+        android:id="@+id/listViewList"
+        android:layout_width="match_parent"
+        android:layout_height="214dp" />
+
+    <TextView
+        android:id="@+id/textViewDrgGruppe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DRG-Gruppe:" />
+
+    <TextView
+        android:id="@+id/textViewMittlereVerweildauer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mittlere Verweildauer: " />
+
+    <TextView
+        android:id="@+id/textViewErsterTagAbschlag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Erster Tag Abschlag: " />
+
+    <TextView
+        android:id="@+id/textViewErsterTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="erster Tag" />
+
+    <TextView
+        android:id="@+id/textViewZusätzlichesGeld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zusätzliches Geld: " />
+
+</LinearLayout>

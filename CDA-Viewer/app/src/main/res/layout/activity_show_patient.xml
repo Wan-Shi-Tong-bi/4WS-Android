@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".showPatient">
+
+    <TextView
+        android:id="@+id/txtViewPatientShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:text="Patient"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtViewArztShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="Arzt"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/lstViewEinträgeShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C37974" />
+</LinearLayout>

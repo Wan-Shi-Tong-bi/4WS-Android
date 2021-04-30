@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Übersicht aller Unfälle"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <ListView
+                android:id="@+id/lstviewUebersichtUnfaelle"
+                android:layout_width="match_parent"
+                android:layout_height="291dp">
+
+            </ListView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNewAccident"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:onClick="newAccidentOnClick"
+                    android:text="Neuen Unfall regestrieren" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

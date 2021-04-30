@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GPS</string>
+    <string name="heading_act1">Aktueller Standort</string>
+    <string name="button_act1">Zeige Datenbank</string>
+</resources>

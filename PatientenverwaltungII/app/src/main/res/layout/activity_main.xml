@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Neue Person anlegen"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/nachname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Nachname"
+                    android:ems="10"
+                    android:hint="Nachname"
+                    android:inputType="textPersonName"
+                    android:textAlignment="viewStart" />
+
+                <EditText
+                    android:id="@+id/vorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Vorname"
+                    android:ems="10"
+                    android:hint="Vorname"
+                    android:inputType="textPersonName"
+                    android:textAlignment="viewStart" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radiobuttonGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonArzt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arzt"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonPatient"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/anlegen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FFFFFF"
+                android:onClick="anlgenOnAction"
+                android:text="Anlegen"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTint="#FFFFFF"
+                    android:onClick="vorherigePersonOnAction"
+                    android:text="Vorherige Person"
+                    android:textSize="18sp" />/>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTint="#FFFFFF"
+                    android:onClick="nächstPersonOnAction"
+                    android:text="Nächste Person"
+                    android:textSize="18sp" />/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewVorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textViewNachname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textViewType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

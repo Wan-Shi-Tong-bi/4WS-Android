@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Verwaltung</string>
+    <string name="btnHinzufugen">Neuen Patient hinzufügen</string>
+    <string name="anzeigen">Patient anzeigen</string>
+    <string name="btnEinträgeHinzufügen">Neuen Eintrag hinzufügen</string>
+    <string name="Ok">OK</string>
+    <string name="zurück">Zurück</string>
+    <string name="vorname">Vorname</string>
+    <string name="nachname">Nachname</string>
+    <string name="datum">Datum</string>
+    <string name="eintrag">Eintrag</string>
+</resources>

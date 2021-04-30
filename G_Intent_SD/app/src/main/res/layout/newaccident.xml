@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewaccidentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Neuen Unfall regestrieren"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Datum"
+                    android:inputType="date" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="checkBoxDateOnClick"
+                    android:text="Heute" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldUhrzeit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Uhrzeit"
+                    android:inputType="time" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxUhrzeit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="checkBoxUhrzeitOnClick"
+                    android:text="Jetzt" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldStrasse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:capitalize="characters"
+                    android:ems="10"
+                    android:hint="Straße"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="true" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldHausnr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Hausnummer"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldPlz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Postleitzahl"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txtFieldOrt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ort"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="true" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxVerlezte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Verletzte" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxAndereSachschäden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Andere Sachschäden" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_person_add_24"
+                android:onClick="openWitnessWindowOnClick"/>
+
+            <ListView
+                android:id="@+id/lstViewWitness"
+                android:layout_width="match_parent"
+                android:layout_height="184dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_circle"
+                    android:onClick="saveAccidentOnClick"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

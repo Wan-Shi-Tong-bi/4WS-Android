@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CandidaScore</string>
+    <string name="btn_speichern">Auswahl in Liste speichern</string>
+    <string name="btn1">Vollständige parenterale Ernährung</string>
+    <string name="btn2">Operativer Eingriff</string>
+    <string name="btn3">Multifokale Kolonisation mit Candida</string>
+    <string name="btn4">Schwere Sepsis</string>
+
+    <string name="btn4m">    --> eine schwere Sepsis </string>
+    <string name="btn1m">    --> eine vollständige parenterale Ernährung </string>
+    <string name="btn2m">    --> einen operativen Eingriff </string>
+    <string name="btn3m">    --> eine multifokale Kolonisation mit Candida </string>
+
+    <string name="info"> Informationen Patient: </string>
+    <string name="patienthatte">  Der Patient hat: </string>
+
+    <string name="hinzugefügt">Element wurde erfolgreich hinzugefügt.</string>
+    <string name="entfernt">Elemt wurde gelöscht.</string>
+
+    <string name="heading">Riskikostratifizierung für die antimykotische Therapie an der Intensivstation</string>
+
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/txtViewÜberschriftNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Neues Medikament regestrieren"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="24sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/txtViewDatumNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Datum"
+                        android:inputType="date" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxDatumNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Heute" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/txtViewUhrzeitNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Uhrzeit"
+                        android:inputType="time" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxUhrzeitNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jetzt" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/txtViewHerstellerNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Hersteller"
+                        android:inputType="text" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/txtViewProduktNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Produkt"
+                        android:inputType="text" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/txtViewMengeNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Menge"
+                        android:inputType="number" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnErstellenNew"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_circle"
+                        android:onClick="btnErstellenNewOnClick"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="36sp" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lstViewEinträgeNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
